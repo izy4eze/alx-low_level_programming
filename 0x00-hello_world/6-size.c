@@ -2,7 +2,7 @@
 
 /**                                                                                                                                
 * main - Entry point                                                                                                           
-* This programe print the szie of various types of compile task    
+* This programe print the szie of various types    
 * Return: Always 0 (success)                                                                                                     
 */ 
 
