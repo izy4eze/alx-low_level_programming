@@ -1,12 +1,11 @@
 #include <stdio.h>                                                                                                                 
 
 /**                                                                                                                                
+ * main - Entry point                                                                                                           
+ * This programe print the szie of various types of compile task    
  *
- *  * main - Entry point                                                                                                           
- *  This programe print the szie of various types of compile task    
- *
- *  return  a 0 as output       
- *  Return: Always 0 (success)                                                                                                     
+ * return  a 0 as output       
+ * Return: Always 0 (success)                                                                                                     
  */ 
 
 int main(void)                                                                                                                     {                                                                                                                                
