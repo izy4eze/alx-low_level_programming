@@ -3,8 +3,6 @@
 /**
  * main - Entry point
  * This programe print the szie of various types of compile task
- *
- * return  a 0 as outpu
  * Return: Always 0 (success)
  */
 
