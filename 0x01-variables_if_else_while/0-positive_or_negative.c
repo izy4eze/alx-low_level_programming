@@ -5,7 +5,6 @@
 /**
 * main - Entry point
 * This programe assigns numbes to variables
- 
 * Return: Always 0 (Success)
 */
 int main(void)
