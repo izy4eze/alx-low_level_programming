@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-/**                                                                                                                                   
-* main - Entry point                                                                                                                 
-* This programe print the szie of various types of compile task                                                                      
-* Return: Always 0 (success)                                                                                                         
-*/                                                                                                                                   
-
-int main(void)                                                                                                                        
+/**
+ * main - Entry point 
+ * This is a script prints the size of various size on computer
+ * Return: Always 0 (Sucess)
+ */
+int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of an int: %d byte(s)\n", sizeof(int));
 	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
 	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
 	printf("Size of a float: %lu byte(s)\n", sizeof(float));
-	return (0);    
+	return 0;
+     	
+
+}
