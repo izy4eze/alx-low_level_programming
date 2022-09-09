@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *main - Entry point 
- * This is a script prints the size of various size on computer
- * Return: Always 0 (Sucess)
- */
+* main - Entry point
+* This is a script prints the size of various size on computer
+* Return: Always 0 (Sucess)
+*/
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
