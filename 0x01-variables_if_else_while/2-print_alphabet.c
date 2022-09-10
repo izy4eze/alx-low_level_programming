@@ -6,6 +6,7 @@
 * main - Entry point
 * This programe print letters in uppercase
 * Return: Always 0 (success)
+*eslint no-trailing-spaces: ["error", { "skipBlankLines": true }]
 */
 
 int main(void)
