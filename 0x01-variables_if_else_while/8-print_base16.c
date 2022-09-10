@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* This program prints all number of base 16
+* This program prints all number
 * Return: Always 0 (success)
 */
 
@@ -15,6 +15,7 @@ int main(void)
 
 	for (d = '0'; d <= '9'; d++)
 		putchar(d);
+	
 	for (low = 'a'; low <= 'f'; low++);
 	putchar(low);
 	putchar('\n');
