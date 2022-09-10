@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* This program prints lowwercase char 
+* This program prints lowwercase char
 * Return: Always 0 (success)
 */
 
