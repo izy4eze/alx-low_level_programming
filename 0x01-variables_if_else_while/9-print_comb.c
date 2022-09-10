@@ -4,18 +4,18 @@
 
 /**
 * main - Entry point
-* This program prints all possible single number 
+* This program prints nummber  
 * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	int d;
+	int a;
 
-	for (d = '0'; d <= '9'; d++)
+	for (a = '0'; a <= '9'; d++)
 	{
 		putchar(d);
-		if (d != '9')
+		if (a != '9')
 		{
 			putchar(',');			
 		}
