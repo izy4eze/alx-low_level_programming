@@ -4,14 +4,14 @@
 
 /**
 * main - Entry point
-* This program prints all number
+* This program prints
 * Return: Always 0 (success)
 */
 
 int main(void)
 {
 	int d;
-	int low;
+	char low;
 
 	for (d = '0'; d <= '9'; d++)
 		putchar(d);
