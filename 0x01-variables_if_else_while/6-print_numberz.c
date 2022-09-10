@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* This programe prints all single digits 
+* This programe prints all single digits
 * Return: Always 0 (success)
 */
 
