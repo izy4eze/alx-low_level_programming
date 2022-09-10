@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* This program prints nummber  
+* This programe prints all possible combination   
 * Return: Always 0 (success)
 */
 
