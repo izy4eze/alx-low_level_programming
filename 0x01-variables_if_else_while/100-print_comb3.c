@@ -4,13 +4,14 @@
 
 /**
 * main - Entry point
-* The programe prints all possibilities of two combinations 
+* The program prints combination of numbers
 * Return: Always 0 (success)
 */
 
 int main(void)
 {
 	int d, p;
+
 	
 	for (d = '0'; d < '9'; d++)
 	{
