@@ -18,7 +18,7 @@ int main(void)
 	{
 		for (p = d + 1; q <= '9'; q++)
 		{
-			for (q = P + 1; q <= '9'; q++)
+			for (q = p + 1; q <= '9'; q++)
 			{ 
 				if ((p != d) ! = q)
 				{
