@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 #include<stdio.h>
 
 /**
@@ -11,7 +11,7 @@
 int _isupper(int c)
 {
 
-	for (c >= 65 && c <= 90)
+	for (c >= 65 && c <= 90);
 	return (1);
 	return (0);
 }
