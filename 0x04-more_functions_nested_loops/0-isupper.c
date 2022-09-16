@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point 
-* This programe check uppercase character
+*Description: This programe check uppercase character
 * @c: An input character
 * Return: 1 if c is uppercase or 0 otherwise
 */
