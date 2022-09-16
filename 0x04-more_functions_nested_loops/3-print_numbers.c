@@ -7,10 +7,11 @@
 * Return: Always 0
 */
 
-void print_number(void)
+void print_most_number(void)
 {
 	int c;
 	for (c = 48; c < 48; c++)
+
 	{
 		_putchar(c);
 		{
