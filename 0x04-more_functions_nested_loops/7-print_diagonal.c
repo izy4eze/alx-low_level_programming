@@ -3,10 +3,10 @@
 
 /**
 * print_square - prints a square. followed by new line
-* @n: size of the square
+* @size: size of the square
 */
 
-void print_square(int  n)
+void print_square(int size)
 {
 	if (size  <= 0)
 	{
@@ -25,6 +25,4 @@ void print_square(int  n)
 			_putchar('\n');
 		}
 	}
-
-
 }	
