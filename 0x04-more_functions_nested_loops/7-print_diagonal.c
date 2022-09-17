@@ -3,10 +3,10 @@
 
 /**
 * print_square - prints a square. followed by new line
-* @size: size of the square
+* @n: size of the square
 */
 
-void print_square(int size)
+void print_diagonal(int n)
 {
 	if (size  <= 0)
 	{
