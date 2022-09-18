@@ -7,7 +7,7 @@
 *Return: Always 0
 */
 
-int void print_square(int size)
+void print_square(int size)
 {
 	if (size <= 0)
 	{
