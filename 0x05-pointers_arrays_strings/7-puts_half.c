@@ -7,7 +7,7 @@
 * Return: always 0.
 */
 
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int i, j, length, newstart;
 
