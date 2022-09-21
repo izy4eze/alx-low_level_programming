@@ -5,21 +5,27 @@
  * rev_string - a function that reverse a string
  * followed by a new line
  * @s: an input string.
- * Return: Nothing
+ * Return: Always 0
  */
 
 void rev_string(char *s)
 {
-	int len = 0, i = 0;
-	char aux;
+	int len, j;
+	char a;
 
-	while (s[len] != '\0')
-		len++;
+	len = 0;
 
-	while (1 < len--)
+	while (*(s + len) != '\0')
 	{
-		aux = s[i];
-		s[i++] = s[len];
-		s[len] = aux;
+		len++;
+	}
+
+	for (j = 0; j < (length / 2); j++)
+
+	{
+		a = *(s + j);
+		*(s + j) = *(s + length - j - 1);
+		*(s + length - j - 1) = a;
+	
 	}
 }
