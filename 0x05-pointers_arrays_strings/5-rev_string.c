@@ -20,11 +20,11 @@ void rev_string(char *s)
 		len++;
 	}
 
-	for (j = 0; j < (length / 2); j++)
+	for (j = 0; j < (len / 2); j++)
 
 	{
 		a = *(s + j);
-		*(s + j) = *(s + length - j - 1);
-		*(s + length - j - 1) = a;
+		*(s + j) = *(s + len - j - 1);
+		*(s + len- j - 1) = a;
 	}
 }
