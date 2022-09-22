@@ -9,37 +9,28 @@
 
 int _atoi(char *s)
 {
-	unsigned int counter, i, j, k, length, num, l;
-	int aux;
+	int sign = 1;
+	unsigned int total = 0;
+	char null_flag = 0;
 
-	aux = 1;
-	counter = 0;
-	num  = 0;
-
-	while (*(s + counter) != '\0')
-		counter++;
-	for (i = 0; i < counter; i++)
+	while (*s)
 	{
-		if (*(s + i) <= '9' && *(s + i) >= '0')
+		if (*s == '-')
+			sign *= -1;
+		if (*s >= '0' && *s <= '9')
+		{
+			null_flag = 1;
+			total = total * 10 + *s - '0';
+		}
+
+		else if (null_flag)
 			break;
-	}
-	for (j = i; j < counter; j++)
-	{
-		if (!(*(s + j) <= '9' && *(s + j) >= '0'))
-			break;
-	}
-	for (k = 0; k < i; k++)
-	{
-		if (*(s + k) == '-')
-			aux = -aux;
-	}
-	length = j - i;
-	l = i;
+		s++;
 
-	{
-		num = num * 10 + (*(s + l) - '0');
-		i++;
-		length--;
 	}
-	return (num * aux);
+
+	if (sign < 0)
+		total = (-total);
+
+	return (total);
 }
