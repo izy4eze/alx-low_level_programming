@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* This program print lines of code 
-* Return: Alway 0 (success)
+*This program print lines of code 
+*Return: Alway 0 (success)
 */
 
 
