@@ -9,3 +9,4 @@ Write a function that encodes a string into 1337.
 Write a function that encodes a string using rot13
 Write a function that prints an integer
 Write a function that adds two numbers.
+Write a function that prints an integer
