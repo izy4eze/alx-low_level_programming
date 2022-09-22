@@ -17,7 +17,7 @@ int main(void)
 
 	while (keynumber < (checksum - 122))
 	{
-		symbol = (rand() % (122 - 97 + 1)) + 97;/*to print mostly lowercaseletters*/
+		symbol = (srand() % (122 - 97 + 1)) + 97;/*to print mostly lowercaseletters*/
 		printf("%c", symbol);
 		keynumber = keynumber + symbol;
 	}
