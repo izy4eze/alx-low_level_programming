@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stdlib.h>
 #include<stdio.h>
 #include<time.h>
 
@@ -9,21 +10,18 @@
 
 int main(void)
 {
-	int keynumber, symbol, checksum;
+	char c;
+	int x;
 
-	srand(time(NULL));
-	checksum = 2772;
-	keynumber = 0;
-
-	while (keynumber < (checksum - 122))
+	srand(time(0));
+	while (x <= 2645)
 	{
-		symbol = (srand() % (122 - 97 + 1)) + 97;/*to print mostly lowercaseletters*/
-		printf("%c", symbol);
-		keynumber = keynumber + symbol;
+		c = rand() % 128;
+		x += c;
+		putchar(c);
 	}
 
-	symbol = checksum - keynumber;
-	printf("%c", symbol);
+	putchar(2772 - x);
 
 	return (0);
 }
