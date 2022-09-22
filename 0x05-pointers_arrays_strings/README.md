@@ -10,3 +10,4 @@ Write a function that prints n elements of an array of integers, followed by a n
 Write a function that copies the string pointed 
 Write a function that copies the string pointed 
 Write a function that convert a string to an integer.
+Create a program that generates random valid passwords for the program
