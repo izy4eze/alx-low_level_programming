@@ -10,12 +10,13 @@
 int power_operation(int n, int c)
 {
 	if (c % (n / c) == 0)
-	{	
+	{
 		if (c * (n / c) == n)
 			return (c);
 		else
 			return (-1);
 	}
+	return (0 + power_operation(n, c + 1));
 
 }
 
@@ -23,6 +24,7 @@ int power_operation(int n, int c)
 * _sqrt_recursion - returns the natural square root of a number.
 * @n: input number.
 * Return: natural square root.
+* int _sqrt_recursion(int n)
 */
 
 int _sqrt_recursion(int n)
@@ -35,3 +37,4 @@ int _sqrt_recursion(int n)
 		return (1);
 	return (power_operation(n, 2));
 }
+
