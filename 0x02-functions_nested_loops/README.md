@@ -13,3 +13,4 @@ Write a function that prints all natural numbers from n to 98, followed by a new
 Write a function that prints the n times table, starting with 0.
 void print_times_table(int n)
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
