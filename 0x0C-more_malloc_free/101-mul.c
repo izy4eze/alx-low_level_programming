@@ -9,7 +9,7 @@
 * Return: void
 */
 
-void _print(char *str, int l) 
+void _print(char *str, int l)
 {
 	int i, j;
 
@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
 	for (l2 = 0; argv[2][l2]; l2++)
 		;
 	ln = l1 + l2 + 1;
-	a = malloc(ln *sizeof(char));
+	a = malloc(ln * sizeof(char));
 	if (a == NULL)
 	{
 		for (ti = 0; e[ti]; ti++)
