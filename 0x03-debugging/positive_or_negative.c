@@ -4,6 +4,7 @@
 
 /**
 * main - Entry point
+* This project is for positive and negative value
 * Description: print value of n satus; zero, positive or negative
 * Return: Always 0 (Success)
 */
