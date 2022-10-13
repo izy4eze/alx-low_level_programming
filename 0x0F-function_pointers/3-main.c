@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int agr1, arg2, result;
+	int arg1, arg2, result;
 	char o;
 	int (*func)(int, int);
 
@@ -36,15 +36,8 @@ int main(int argc, char *argv[])
 
 	if ((o == '/' || o == '%') && arg2 == 0)
 	{
-		printf("Erro\n")
+		printf("Erro\n");
 			exit(100);
-	}
-
-
-	if (get_op_func(op) == NULL || op[1] != '\0')
-	{
-		printf("Error\n");
-		exit(99);
 	}
 
 	result  = func(arg1, arg2);
