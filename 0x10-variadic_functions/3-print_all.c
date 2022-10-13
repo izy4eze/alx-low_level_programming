@@ -20,11 +20,12 @@ void print_all(const char * const format, ...)
 		while (t_arg[j])
 		{
 			if (format[i] == t_arg[j] && k)
-			{	
+			{
 				printf(", ");
 				break;
 			} j++;
 		}
+
 		switch (format[i])
 		{
 			case 'c':
@@ -45,7 +46,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", str);
 				break;
-		}i++;
+		} i++;
 	}
 
 	printf("\n"), va_end(valist);
