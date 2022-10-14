@@ -2,109 +2,85 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void print_char(va_list arg);
-void print_int(va_list arg);
-void print_float(va_list arg);
-void print_string(va_list arg);
-void print_all(const char * const format, ...);
-
 /**
-*  print_char - Prints a char.
-*  @arg: A list of arguments pointing to
-*  the character to be printed.
+* print_int - prints in
+* @list: arguments from print_all
 */
 
-void print_char(va_list arg)
+void print_int(va_list list)
 {
-	char letter;
-
-	letter = va_arg(arg, int);
-	printf("%c", letter);
+	printf("%d", va_arg(list, int));
 }
 
 /**
-* print_int - Prints an int
-* @arg: A list of arguments pointing to
-* the integer to be printed.
+* print_float - prints float
+* @list: arguments from print_all
 */
 
-void print_int(va_list arg)
+void print_float(va_list list)
 {
-	int num;
-	num = va_arg(arg, int);
-	
-	printf("%d", num);
+	printf("%f", va_arg(list, double));
 }
 
 /**
-* print_float - Prints a float.
-* @arg: A list of arguments pointing to
-* the float to be printed.
+* @list: arguments from print_all
 */
-void print_float(va_list arg)
-{
-	float num;
 
-	num = va_arg(arg, double);
-	printf("%f", num);
+void print_char(va_list list)
+{
+	printf("%c", va_arg(list, int));
 }
 
 /**
-* print_string - Prints a string.
-* @arg: A list of arguments pointing to
-* the string to be printed.
+* print_str - prints string
+* @list: arguments from print_all
 */
-
-void print_string(va_list arg)
+void print_str(va_list list)
 {
-	char *str;
+	char *s = va_arg(list, char *);
 
-	str = va_arg(arg, char *);
-
-	if (str == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", str);
+	s == NULL ? printf("(nil)") : printf("%s", s);
 }
 
 /**
-* print_all - Prints anything, followed by a new line.
-* @format: A string of characters representing the argument types.
-* @...: A variable number of arguments to be printed.
-* Description: Any argument not of type char, int, float,
-* or char * is ignored.
-* If a string argument is NULL, (nil) is printed instead.
+* print_all - prints any type
+* @format: arguments to print
 */
 
 void print_all(const char * const format, ...)
 {
-	va_list args;
+	va_list list;
 	int i = 0, j = 0;
-	char *separator = "";
-	printer_t funcs[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string}
+	char *sep = "";
+
+	printTypeStruct printType[] = {
+		{ "i", print_int },
+		{ "f", print_float },
+		{ "c", print_char },
+		{ "s", print_str },
+		{NULL, NULL}
+
 	};
-	va_start(args, format);
 
-	while (format && (*(format + i)))
-	{
+	va_start(list, format);
+
+	while (format && format[i])
+	{	
 		j = 0;
-
-		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
-			j++;
-		if (j < 4)
+		while (j < 4)
 		{
-			printf("%s", separator);
-			funcs[j].print(args);
-			separator = ", ";
+			if (*printType[j].type == format[i])
+			{
+				printf("%s", sep);
+				printType[j].printer(list);
+				sep = ", ";
+				break;
+			}
+			j++;
 		}
 		i++;
 	}
 	printf("\n");
-	va_end(args);
+	va_end(list);
+
 }
