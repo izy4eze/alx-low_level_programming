@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 /**
-* This is task 3 project
 * print_int - prints in
 * @list: arguments from print_all
 */
