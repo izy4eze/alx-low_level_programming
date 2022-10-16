@@ -10,3 +10,4 @@ Write a function that prints a square, followed by a new line
 The fuzz test
 Write a function that prints a triangle, followed by a new line.
 Write a program that finds and prints the largest prime factor of the numbe
+Write a function that prints an integer.
