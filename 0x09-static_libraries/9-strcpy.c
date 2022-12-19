@@ -1,24 +1,22 @@
-#include"main.h"
-#include<stdio.h>
+#include "main.h"
 
 /**
-* _strcpy - print the copy of an array.
-* @dest: destination array
-* @src: source array
-* Return: dest array.
-*/
-
+ * _strcpy - Copiar el contenido de uno a otra variable
+ * @dest: This is destiny
+ * @src: This is the copia
+ *
+ * Return: This return copy
+ */
 char *_strcpy(char *dest, char *src)
 {
-	int  i;
+	char *start = dest;
 
-	i = 0;
-	while (*(src + i) != '\0')
+	while (*src != '\0')
 	{
-		*(dest + i) = *(src + i);
-		i++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	*(dest + i) = '\0';
-
-		return (dest);
+	*dest = '\0';
+	return (start);
 }
