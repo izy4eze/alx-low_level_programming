@@ -1,22 +1,21 @@
 #include "search_algos.h"
-
 /**
- * b_search - function that searches for a value in a sorted 
- * array of integers using Bainary search algorithm
+ * b_search - function that searches for a value in a sorted
+ * array of integers using the Binary search algorithm
  *
- *  @array: Array is a pointer to the first element of the array to search in
- *  @low: left index in the array
- *  @high: right index in thr array
- *  @value: value to search for in  the array
+ * @array: Array is a pointer to the first element of the array to search in
+ * @low: Left index in the array
+ * @high: right index in the array
+ * @value: Value to search for in the array
  *
- *  Return: The first index where value is located 
- *  or -1 if value is not found or if array is NULL
+ * Return: The first index where value is located
+ * or -1 if value is not found or if array is NULL
  */
 int b_search(int *array, size_t low, size_t high, int value)
 {
 	size_t left = low;
 	size_t right = high - 1;
-	size_t middle  = 0;
+	size_t middle = 0;
 	size_t i = 0;
 
 	if (array != NULL)
@@ -30,13 +29,13 @@ int b_search(int *array, size_t low, size_t high, int value)
 				printf("%d, ", array[i]);
 			}
 			printf("%d\n", array[i]);
-			if (array[middile] < value)
+			if (array[middle] < value)
 			{
-				left  = middle + 1;
+				left = middle + 1;
 			}
 			else if (array[middle] > value)
 			{
-				right = middle  -1;
+				right = middle - 1;
 			}
 			else
 			{
@@ -46,7 +45,6 @@ int b_search(int *array, size_t low, size_t high, int value)
 	}
 	return (-1);
 }
-
 /**
  * exponential_search - Function that searches for a value in a sorted array
  * of integers using the Exponential search algorithm
@@ -56,7 +54,7 @@ int b_search(int *array, size_t low, size_t high, int value)
  * @value: Value to search for in the array
  *
  * Return: The first index where value is located
- *  or -1 if value is not found or if array is NULL
+ * or -1 if value is not found or if array is NULL
  */
 int exponential_search(int *array, size_t size, int value)
 {
@@ -81,6 +79,3 @@ int exponential_search(int *array, size_t size, int value)
 	}
 	return (-1);
 }
-
-
-
