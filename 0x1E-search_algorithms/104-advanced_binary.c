@@ -1,4 +1,9 @@
 #include "search_algos.h"
+#include "main.c"
+#include <stdio.h>
+#include <stdlib.h>
+
+
 
 /**
   * advanced_binary_recursive - Searches recursively for a value in a sorted
